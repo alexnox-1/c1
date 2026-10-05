@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصور المهنا | Mansour Al-Muhanna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ec;--card:#fff;--ink:#10243b;--mute:#5b6b7e;--line:#d9dde3;--navy:#10243b;--gold:#b88a3e;--on-navy:#f4f1ec}
+[data-theme="dark"]{--bg:#0b1624;--card:#12253b;--ink:#eef1f5;--mute:#9aabbd;--line:#23384f;--navy:#06101c;--gold:#d4a85a;--on-navy:#eef1f5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto 0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-weight:700;font-size:1.1rem}
+.logo b{color:var(--gold)}
+.links{display:flex;gap:22px;font-size:.92rem;color:var(--mute)}
+.links a:hover{color:var(--ink)}
+.tools{display:flex;gap:8px}
+.btn{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 14px;border-radius:6px;font-size:.88rem;transition:.2s;display:inline-block}
+.btn:hover{border-color:var(--gold)}
+.btn.main{background:var(--gold);border-color:var(--gold);color:#10243b;font-weight:600;padding:10px 24px;font-size:1rem}
+.btn.main:hover{filter:brightness(1.08)}
+.hero{background:var(--navy);color:var(--on-navy);padding:150px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 79px,rgba(255,255,255,.04) 79px 80px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero small{color:var(--gold);font-weight:500;font-size:1rem}
+h1{font-size:clamp(2.2rem,5.5vw,3.8rem);line-height:1.25;margin:10px 0 14px;font-weight:700}
+.hero p{max-width:46ch;opacity:.85}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.cta .btn:not(.main){background:transparent;color:var(--on-navy);border-color:rgba(255,255,255,.3);padding:10px 24px;font-size:1rem}
+.code{direction:ltr;background:#050d17;border:1px solid rgba(255,255,255,.12);border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.35);font-family:Consolas,Menlo,monospace;font-size:.85rem;color:#c9d6e4}
+.code .bar{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.1)}
+.code .bar i{width:10px;height:10px;border-radius:50%;background:#33455a}
+.code pre{padding:18px 20px;min-height:230px;white-space:pre-wrap;line-height:1.7;font:inherit}
+.k{color:#d4a85a}.s{color:#8fc6a0}.c{color:#6f8398}
+.cur{display:inline-block;width:8px;height:1em;background:var(--gold);vertical-align:-2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+section{padding:80px 0}
+section.alt{background:color-mix(in srgb,var(--card) 60%,var(--bg))}
+h2{font-size:1.9rem;margin-bottom:34px;display:flex;align-items:center;gap:14px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stat{border-inline-start:3px solid var(--gold);padding:4px 16px}
+.stat b{font-size:1.7rem;display:block;line-height:1.3}
+.stat span{color:var(--mute);font-size:.9rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.skill{margin-bottom:18px}
+.skill>div:first-child{display:flex;justify-content:space-between;font-size:.95rem;margin-bottom:4px}
+.track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.track span{display:block;height:100%;width:0;background:var(--gold);transition:width 1.2s ease}
+.tl{border-inline-start:2px solid var(--line);padding-inline-start:26px;display:grid;gap:30px;margin-inline-start:8px}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;inset-inline-start:-35px;top:9px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--gold)}
+.tl small{color:var(--gold);font-weight:600}
+.tl h3{font-size:1.1rem}
+.tl p{color:var(--mute);font-size:.95rem}
+.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.course{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.course small{color:var(--mute)}
+.proj{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.p{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.p:hover{transform:translateY(-4px);border-color:var(--gold)}
+.p .thumb{height:150px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:2.4rem;font-weight:700;direction:ltr}
+.p .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.p p{color:var(--mute);font-size:.95rem;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags span{font-size:.78rem;border:1px solid var(--line);padding:1px 10px;border-radius:20px;color:var(--mute);direction:ltr}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ci{display:grid;gap:12px;align-content:start}
+.ci a{display:flex;justify-content:space-between;gap:12px;background:var(--card);border:1px solid var(--line);padding:13px 18px;border-radius:8px;transition:.2s}
+.ci a:hover{border-color:var(--gold)}
+.ci span:last-child{direction:ltr;color:var(--mute);font-size:.92rem}
+form{display:grid;gap:12px}
+input,textarea{font:inherit;width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+footer{background:var(--navy);color:var(--on-navy);text-align:center;padding:26px;font-size:.88rem}
+.rv{opacity:0;transform:translateY(18px);transition:.7s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.links{display:none}.hero .wrap,.grid2,.contact,.proj,.courses{grid-template-columns:1fr}.stats{gap:8px}.stat b{font-size:1.3rem}.hero{padding-top:120px}.stats{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a href="#home" class="logo">M<b>.</b>Almuhanna</a>
+  <div class="links">
+    <a href="#about" data-ar="نبذة" data-en="About"></a>
+    <a href="#skills" data-ar="المهارات" data-en="Skills"></a>
+    <a href="#exp" data-ar="الخبرات" data-en="Experience"></a>
+    <a href="#courses" data-ar="الدورات" data-en="Courses"></a>
+    <a href="#projects" data-ar="المشاريع" data-en="Projects"></a>
+    <a href="#contact" data-ar="تواصل" data-en="Contact"></a>
+  </div>
+  <div class="tools">
+    <button class="btn" id="theme" aria-label="Theme">🌙</button>
+    <button class="btn" id="lang">EN</button>
+  </div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <small data-ar="مرحباً، أنا" data-en="Hello, I'm"></small>
+    <h1 data-ar="منصور إبراهيم المهنا" data-en="Mansour Ibrahim Al-Muhanna"></h1>
+    <p data-ar="طالب تطوير ويب، عمري ١٨ سنة. أبني مواقع سريعة ومرتّبة، وأحوّل الأفكار إلى صفحات تعمل بسلاسة على كل الأجهزة." data-en="Web development student, 18 years old. I build fast, clean websites and turn ideas into pages that work smoothly on every device."></p>
+    <div class="cta">
+      <a href="#projects" class="btn main" data-ar="شاهد مشاريعي" data-en="View my projects"></a>
+      <a href="#contact" class="btn" data-ar="تواصل معي" data-en="Contact me"></a>
+    </div>
+  </div>
+  <div class="code"><div class="bar"><i></i><i></i><i></i></div><pre id="type"></pre></div>
+</div></section>
+
+<section id="about"><div class="wrap rv">
+  <h2 data-ar="نبذة عني" data-en="About me"></h2>
+  <div class="grid2">
+    <p data-ar="بدأت رحلتي مع البرمجة في سن مبكرة بدافع الفضول، وتحوّل هذا الفضول إلى شغف حقيقي بتطوير الويب. أركّز على كتابة كود نظيف، وتصميم واجهات واضحة، والاهتمام بتجربة المستخدم. أتعلم كل يوم، وأطمح لبناء منتجات رقمية يستفيد منها الناس." data-en="I started programming early out of curiosity, and it grew into a real passion for web development. I focus on clean code, clear interfaces and good user experience. I learn every day and aim to build digital products people benefit from."></p>
+    <div class="stats">
+      <div class="stat"><b>18</b><span data-ar="سنة" data-en="Years old"></span></div>
+      <div class="stat"><b>2</b><span data-ar="مشاريع منشورة" data-en="Live projects"></span></div>
+      <div class="stat"><b>6</b><span data-ar="دورات مكتملة" data-en="Courses done"></span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" id="skills"><div class="wrap rv">
+  <h2 data-ar="المهارات" data-en="Skills"></h2>
+  <div class="grid2" id="skillbox"></div>
+</div></section>
+
+<section id="exp"><div class="wrap rv">
+  <h2 data-ar="الخبرات" data-en="Experience"></h2>
+  <!-- بيانات تجريبية: عدّلها لاحقاً -->
+  <div class="tl">
+    <article><small>2025 – <span data-ar="الآن" data-en="Present"></span></small>
+      <h3 data-ar="مطوّر ويب مستقل" data-en="Freelance Web Developer"></h3>
+      <p data-ar="بناء صفحات تعريفية ومواقع شخصية للعملاء مع التركيز على السرعة والتجاوب." data-en="Building landing pages and personal sites for clients, focused on speed and responsiveness."></p></article>
+    <article><small>2024</small>
+      <h3 data-ar="متدرب تطوير واجهات" data-en="Front-End Intern"></h3>
+      <p data-ar="العمل على مكوّنات الواجهة وتحسين قابلية الاستخدام ضمن فريق صغير." data-en="Worked on UI components and improved usability within a small team."></p></article>
+    <article><small>2023</small>
+      <h3 data-ar="عضو النادي التقني بالمدرسة" data-en="School Tech Club Member"></h3>
+      <p data-ar="تنظيم ورش تعريفية بأساسيات HTML وCSS لزملاء الدراسة." data-en="Organized intro workshops on HTML and CSS basics for classmates."></p></article>
+  </div>
+</div></section>
+
+<section class="alt" id="courses"><div class="wrap rv">
+  <h2 data-ar="الدورات والشهادات" data-en="Courses &amp; Certificates"></h2>
+  <!-- بيانات تجريبية: عدّلها لاحقاً -->
+  <div class="courses">
+    <div class="course"><b data-ar="تطوير الويب المتكامل" data-en="Full-Stack Web Development"></b><br><small>Udemy · 2025</small></div>
+    <div class="course"><b data-ar="JavaScript المتقدمة" data-en="Advanced JavaScript"></b><br><small>freeCodeCamp · 2025</small></div>
+    <div class="course"><b data-ar="التصميم المتجاوب" data-en="Responsive Web Design"></b><br><small>freeCodeCamp · 2024</small></div>
+    <div class="course"><b data-ar="Git وGitHub للمحترفين" data-en="Git &amp; GitHub Essentials"></b><br><small>Coursera · 2024</small></div>
+    <div class="course"><b data-ar="أساسيات تصميم تجربة المستخدم" data-en="UI/UX Design Basics"></b><br><small>Google · 2024</small></div>
+    <div class="course"><b data-ar="أمن تطبيقات الويب" data-en="Web Security Fundamentals"></b><br><small>Coursera · 2025</small></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+  <h2 data-ar="المشاريع" data-en="Projects"></h2>
+  <div class="proj">
+    <a class="p" href="https://alexnox-1.github.io/my-website/" target="_blank" rel="noopener">
+      <div class="thumb">&lt;/&gt;</div>
+      <div class="body"><h3 data-ar="موقعي الأول" data-en="My First Website"></h3>
+        <p data-ar="موقع منشور على GitHub Pages يعرض أساسيات عملي في الواجهات." data-en="A site published on GitHub Pages showing my front-end fundamentals."></p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div>
+        <b style="color:var(--gold)" data-ar="زيارة المشروع" data-en="Visit project"></b></div>
+    </a>
+    <a class="p" href="https://index-a871ab.tiiny.site/" target="_blank" rel="noopener">
+      <div class="thumb">{ }</div>
+      <div class="body"><h3 data-ar="المشروع الثاني" data-en="Second Project"></h3>
+        <p data-ar="صفحة ويب منشورة على الإنترنت جرّبت فيها تصميماً وتنظيماً مختلفاً." data-en="A web page published online where I tried a different design and structure."></p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <b style="color:var(--gold)" data-ar="زيارة المشروع" data-en="Visit project"></b></div>
+    </a>
+  </div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap rv">
+  <h2 data-ar="تواصل معي" data-en="Get in touch"></h2>
+  <div class="contact">
+    <div class="ci">
+      <a href="mailto:p0o9uyg@gmail.com"><span data-ar="البريد" data-en="Email"></span><span>p0o9uyg@gmail.com</span></a>
+      <a href="tel:+966531523559"><span data-ar="الجوال" data-en="Phone"></span><span>+966 53 152 3559</span></a>
+      <a href="https://www.linkedin.com/in/mansour-almuhanna-9b9b34430/" target="_blank" rel="noopener"><span>LinkedIn</span><span>mansour-almuhanna</span></a>
+      <a href="https://github.com/alexnox-1" target="_blank" rel="noopener"><span>GitHub</span><span>alexnox-1</span></a>
+    </div>
+    <form id="f">
+      <input id="n" required data-ph-ar="الاسم" data-ph-en="Your name">
+      <input id="m" type="email" required data-ph-ar="بريدك الإلكتروني" data-ph-en="Your email">
+      <textarea id="t" required data-ph-ar="رسالتك" data-ph-en="Your message"></textarea>
+      <button class="btn main" data-ar="إرسال الرسالة" data-en="Send message"></button>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer>© 2026 <span data-ar="منصور إبراهيم المهنا" data-en="Mansour Ibrahim Al-Muhanna"></span></footer>
+
+<script>
+const skills=[["HTML5 / CSS3",90],["JavaScript",78],["Responsive Design",85],["Git & GitHub",75],["React",55],["UI Design",70]];
+document.getElementById("skillbox").innerHTML=[skills.slice(0,3),skills.slice(3)].map(g=>"<div>"+g.map(s=>`<div class="skill"><div><span>${s[0]}</span><span>${s[1]}%</span></div><div class="track"><span data-w="${s[1]}"></span></div></div>`).join("")+"</div>").join("");
+
+let lang="ar",theme="light";
+try{lang=localStorage.getItem("lang")||"ar";theme=localStorage.getItem("theme")||"light"}catch(e){}
+const $=s=>document.querySelectorAll(s);
+function apply(){
+  document.documentElement.lang=lang;document.documentElement.dir=lang=="ar"?"rtl":"ltr";
+  $("[data-ar]").forEach(e=>e.innerHTML=e.dataset[lang]);
+  $("[data-ph-ar]").forEach(e=>e.placeholder=e.dataset[lang=="ar"?"phAr":"phEn"]);
+  document.getElementById("lang").textContent=lang=="ar"?"EN":"عربي";
+  document.documentElement.dataset.theme=theme;
+  document.getElementById("theme").textContent=theme=="dark"?"☀️":"🌙";
+  try{localStorage.setItem("lang",lang);localStorage.setItem("theme",theme)}catch(e){}
+}
+document.getElementById("lang").onclick=()=>{lang=lang=="ar"?"en":"ar";apply()};
+document.getElementById("theme").onclick=()=>{theme=theme=="dark"?"light":"dark";apply()};
+apply();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-w]").forEach(b=>b.style.width=b.dataset.w+"%")}}),{threshold:.15});
+$(".rv").forEach(e=>io.observe(e));
+
+const code=`<span class="c">// about.js</span>
+<span class="k">const</span> developer = {
+  name: <span class="s">"Mansour Al-Muhanna"</span>,
+  age: <span class="s">18</span>,
+  role: <span class="s">"Web Developer"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>],
+  learning: <span class="s">"every day"</span>
+};`;
+const out=document.getElementById("type");let i=0,tag=false,buf="";
+(function step(){
+  if(i>=code.length){out.innerHTML=buf+'<span class="cur"></span>';return}
+  const ch=code[i++];buf+=ch;if(ch=="<")tag=true;if(ch==">")tag=false;
+  if(tag){step();return}
+  out.innerHTML=buf+'<span class="cur"></span>';setTimeout(step,28);
+})();
+
+document.getElementById("f").onsubmit=e=>{
+  e.preventDefault();
+  const nm=document.getElementById("n").value,em=document.getElementById("m").value,msg=document.getElementById("t").value;
+  const s=encodeURIComponent("رسالة من الموقع - "+nm),b=encodeURIComponent(msg+"\n\n"+nm+" ("+em+")");
+  location.href="mailto:p0o9uyg@gmail.com?subject="+s+"&body="+b;
+};
+</script>
+</body>
+</html>
